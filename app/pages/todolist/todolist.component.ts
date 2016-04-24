@@ -5,7 +5,7 @@ import {CompletedFilterPipe} from './completed-filter.pipe';
 
 @Component({
     selector: 'todolist',
-    templateUrl: 'app/todolist/todolist.html',
+    templateUrl: 'app/pages/todolist/todolist.html',
     directives: [CORE_DIRECTIVES],
     pipes: [CompletedFilterPipe]
 })

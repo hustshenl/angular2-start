@@ -1,8 +1,8 @@
 import {Component} from 'angular2/core';
 import {RouterOutlet, RouteConfig, RouteDefinition} from 'angular2/router';
 import {APP_ROUTES} from './app.routes';
-import {NavbarComponent} from './navbar/navbar.component';
-import {LoggerService} from './blocks/logger.service';
+import {NavbarComponent} from './pages/navbar/navbar.component';
+import {LoggerService} from './providers/logger.service';
 
 @Component({
     selector: 'main-app',

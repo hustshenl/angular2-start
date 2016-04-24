@@ -3,7 +3,7 @@ import {ChildComponent} from './child.component';
 
 @Component({
     selector: 'simplebind',
-    templateUrl: 'app/simplebind/simplebind.html',
+    templateUrl: 'app/pages/simplebind/simplebind.html',
     directives: [ChildComponent]
 })
 export class SimplebindComponent {

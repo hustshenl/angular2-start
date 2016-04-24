@@ -1,7 +1,7 @@
 import {RouteDefinition} from 'angular2/router';
-import {HomeComponent} from './home/home.component';
-import {TodolistComponent} from './todolist/todolist.component';
-import {SimplebindComponent} from './simplebind/simplebind.component';
+import {HomeComponent} from './pages/home/home.component';
+import {TodolistComponent} from './pages/todolist/todolist.component';
+import {SimplebindComponent} from './pages/simplebind/simplebind.component';
 
 export var APP_ROUTES: RouteDefinition[] = [
     { path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true },

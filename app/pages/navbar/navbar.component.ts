@@ -4,7 +4,7 @@ import {RouterLink, RouteDefinition} from 'angular2/router';
 
 @Component({
     selector: 'navbar',
-    templateUrl: 'app/navbar/navbar.html',
+    templateUrl: 'app/pages/navbar/navbar.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
     directives: [RouterLink, CORE_DIRECTIVES]
 })
