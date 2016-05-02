@@ -20,7 +20,7 @@ gulp.task('build-sjs', function (done) {
     runSequence('build-assets', 'tsc-app', buildSJS);
     function buildSJS () {
         var builder = new Builder();
-        builder.loadConfig('./systemjs.conf.js')
+        builder.loadConfig('./gulp/systemjs.conf.js')
         .then(function() {
             return builder
                 .bundle(config.app + 'main',

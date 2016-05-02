@@ -1,16 +1,16 @@
 module.exports = function(config) {
-  var dependencies = require('./package.json').dependencies;
+  var dependencies = require('../package.json').dependencies;
   var excludedDependencies = ['systemjs', 'zone.js'];
   var configuration = {
-    basePath: '',
+    basePath: '../',
 
     frameworks: ['jasmine'],
     browsers: ['PhantomJS'],
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
-      'app/**/!(*.spec)+(.js)': ['coverage'],
-      'app/**/*.js': ['sourcemap']
+      '../app/**/!(*.spec)+(.js)': ['coverage'],
+      '../app/**/*.js': ['sourcemap']
     },
 
     // Generate json used for remap-istanbul
@@ -30,8 +30,8 @@ module.exports = function(config) {
       'node_modules/angular2/bundles/angular2-polyfills.js',
       'node_modules/systemjs/dist/system.src.js',
 
-      'systemjs.conf.js',
-      'karma-test-shim.js',
+      'gulp/systemjs.conf.js',
+      'gulp/karma-test-shim.js',
 
       { pattern: 'app/**/*.js', included: false },
       { pattern: 'test/test-helpers/*.js', included: false },

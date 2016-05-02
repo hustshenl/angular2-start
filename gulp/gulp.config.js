@@ -50,11 +50,12 @@ module.exports = function () {
         dev: {
             port: 3000,
             host: "127.0.0.1",
-            open: '/',
+            //open: '/',
+            //root: '.tmp/',
             file: "index.html",
             wait: 1000,
             mount: [['/app', '.tmp/app'],['/assets','.tmp/assets']],
-            logLevel: 0
+            logLevel: 2
         },
         prod: {
             port: 3001,

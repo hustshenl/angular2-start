@@ -14,7 +14,7 @@ import {
 } from 'angular2/router';
 import { Component, provide, ApplicationRef } from 'angular2/core';
 import { AppComponent } from './app.component';
-import { LoggerService } from './blocks/logger.service';
+import { LoggerService } from './providers/logger.service';
 
 @Component({
     selector: 'test',
@@ -23,6 +23,7 @@ import { LoggerService } from './blocks/logger.service';
 })
 class TestComponent {
 }
+
 
 describe('AppComponent', () => {
     beforeEachProviders(() => [
